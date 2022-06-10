@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Калькулятор</title>
+    </head>
+
+    <body>
+        
+<arcticle class="calc">
+    <!--вычисления-->
+<output class="calc__result" id="result"></output>
+
+    <!--кнопочки-->   
+    <button class="calc__btn"  type="button" onclick="sem ()">7</button>
+    <button class="calc__btn" type="button" onclick="vos()">8</button>
+    <button class="calc__btn" type="button" onclick="dev ()">9</button>
+    <button class="calc__btn calc__btn_operator" type="button" onclick="pl ()">+</button>
+
+    <button class="calc__btn" type="button" onclick="che ()">4</button>
+    <button class="calc__btn" type="button" onclick="pat ()">5</button>
+    <button class="calc__btn" type="button" onclick="she ()">6</button>
+    <button class="calc__btn calc__btn_operator" type="button" onclick="mi ()">-</button>
+
+    <button class="calc__btn" type="button" onclick="od ()">1</button>
+    <button class="calc__btn" type="button" onclick="dva ()">2</button>
+    <button class="calc__btn" type="button" onclick="tri ()">3</button>
+    <button class="calc__btn calc__btn_operator" type="button" onclick="umn ()">*</button>
+
+    <button class="calc__btn" type="button" onclick="nu ()">0</button>
+    <button class="calc__btn" type="button" onclick="nu ()">.</button>
+    <button class="calc__btn" type="button" onclick="nu ()">00</button>
+    <button class="calc__btn calc__btn_operator" type="button" onclick="lol ()">/</button>
+
+    <button class="calc__btn calc__btn_reset" type="button" onclick="nu ()">C</button>
+    <button class="calc__btn calc__btn_equal"  id="equal"  translate="no" type="button" onclick="rav ()">=</button>
+    <input type="checkbox" id="mute_button" onchange="muteButton ()" />
+
+    <div class="audio">
+        <audio id="sem"><source src="се.mp3" type="audio/mp3"></audio>
+        <audio id="vos"><source src="вос.mp3" type="audio/mp3"></audio>
+        <audio id="dev"><source src="девять.mp3" type="audio/mp3"></audio>
+        <audio id="pl"><source src="плюс.ogg" type="audio/mp3"></audio>
+        <audio id="che"><source src="четыре.mp3" type="audio/mp3"></audio>
+        <audio id="pat"><source src="пять.mp3" type="audio/mp3"></audio>
+        <audio id="she"><source src="шесть.mp3" type="audio/mp3"></audio>
+        <audio id="mi"><source src="минус.mp3" type="audio/mp3"></audio>
+        <audio id="dva"><source src="два.mp3" type="audio/mp3"></audio>
+        <audio id="tri"><source src="три.mp3" type="audio/mp3"></audio>
+        <audio id="umn"><source src="умножить.mp3" type="audio/mp3"></audio>
+        <audio id="nu"><source src="пуп.ogg" type="audio/ogg"></audio>
+        <audio id="nu"><source src="пуп.ogg" type="audio/ogg"></audio>
+        <audio id="nu"><source src="пуп.ogg" type="audio/ogg"></audio>
+        <audio id="lol"><source src="разделить.mp3" type="audio/mp3"></audio>
+        <audio id="nu"><source src="пуп.ogg" type="audio/ogg"></audio>
+        <audio id="rav"><source src="равно.mp3" type="audio/mp3"></audio>
+        <audio id="od"><source src="один.mp3"> </audio>
+       </div>
+
+
+</arcticle>
+
+<script  type="text/javascript" src="script.js"></script>
+<script>
+    var x = document.getElementById("myAudio");
+    
+    function getVolume() { 
+      alert(x.volume);
+    } 
+    
+    function setHalfVolume() { 
+      x.volume = 0.4;
+    }
+       
+    </script> 
+
+
+</body>
+</html>
